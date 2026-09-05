@@ -1,0 +1,78 @@
+1️⃣ Function Declaration
+
+The most common way to define a function.
+
+function greet(name) {
+console.log("Hello, " + name);
+}
+
+greet("Kamarudheen");
+
+Output:
+Hello, Kamarudheen
+
+
+
+
+2️⃣ Function Expression
+
+A function stored inside a variable. Unlike declarations, it's not hoisted the same way — you must define it before calling it.
+
+const greet = function (name) {
+console.log("Hello, " + name);
+};
+
+greet("Kamarudheen");
+
+Output:
+Hello, Kamarudheen
+
+
+
+
+3️⃣ Function with Return Value
+
+Functions can send a value back using return, instead of just printing something.
+
+function add(a, b) {
+return a + b;
+}
+
+let result = add(5, 3);
+console.log(result);
+
+Output:
+8
+
+
+
+⚠️ Common JavaScript Gotcha
+
+Forgetting return means the function gives back undefined, even if it looks like it's "doing" something inside.
+
+function add(a, b) {
+a + b;
+}
+
+let result = add(5, 3);
+console.log(result);
+
+Output:
+undefined
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output before running this code:
+
+function multiply(a, b) {
+console.log(a * b);
+}
+
+let output = multiply(4, 5);
+console.log(output);
+
+Output :
+20

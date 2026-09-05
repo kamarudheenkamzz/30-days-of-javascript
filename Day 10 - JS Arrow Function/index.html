@@ -1,0 +1,123 @@
+1️⃣ Basic Arrow Function
+
+Arrow functions use the => syntax to define functions.
+
+Traditional Function:
+
+function greet() {
+console.log("Hello, World!");
+}
+
+
+Arrow Function:
+
+const greet = () => {
+console.log("Hello, World!");
+};
+greet();
+
+Output:
+Hello, World!
+
+
+
+
+2️⃣ Arrow Function with Parameters
+
+Arrow functions can accept parameters just like regular functions.
+
+const add = (a, b) => {
+return a + b;
+};
+let result = add(10, 20);
+console.log(result);
+
+Output:
+30
+
+
+
+
+3️⃣ Single Parameter
+
+When there is only one parameter, parentheses can be omitted.
+
+const square = number => {
+return number * number;
+};
+console.log(square(5));
+
+Output:
+25
+
+
+
+
+4️⃣ Multiple Parameters
+
+When there are multiple parameters, parentheses are required.
+
+const multiply = (a, b) => {
+return a * b;
+};
+console.log(multiply(5, 4));
+
+Output:
+20
+
+
+
+
+5️⃣ Implicit Return
+
+If an arrow function contains only one expression, we can remove the curly braces and return.
+
+const add = (a, b) => a + b;
+console.log(add(10, 20));
+
+Output:
+30
+
+This is called an implicit return.
+
+
+
+6️⃣ Arrow Functions with Array Methods
+
+Arrow functions are commonly used with array methods such as map(), filter(), and reduce().
+
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(number => number * 2);
+console.log(doubled);
+
+Output:
+[2, 4, 6, 8, 10]
+
+
+
+
+7️⃣ Arrow Functions vs Regular Functions
+
+Arrow functions provide a shorter syntax and are widely used in modern JavaScript.
+
+Regular Function:
+
+function add(a, b) {
+return a + b;
+}
+
+Arrow Function:
+
+const add = (a, b) => a + b;
+
+Both can produce the same result, but arrow functions make many operations more concise.
+
+
+🧩 Small Practice Challenge
+
+const calculate = (a, b) => a * b;
+let result = calculate(10, 5);
+console.log(result + 10);
+
+Output:
+60

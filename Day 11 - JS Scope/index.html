@@ -1,0 +1,147 @@
+1️⃣ What is Scope?
+
+Scope determines the accessibility (visibility) of variables in different parts of your code.
+
+function greet() {
+  let message = "Hello!";
+  console.log(message);
+}
+greet();
+console.log(message); // Error: message is not defined
+
+Output:
+Hello!
+Uncaught ReferenceError: message is not defined
+
+
+
+
+2️⃣ Global Scope
+
+Variables declared outside any function or block are in the global scope and can be accessed from anywhere.
+
+let username = "Kamarudheen";
+
+function showUser() {
+  console.log(username);
+}
+showUser();
+
+Output:
+Kamarudheen
+
+
+
+
+3️⃣ Function Scope
+
+Variables declared with var inside a function are only accessible within that function.
+
+function calculate() {
+  var total = 100;
+  console.log(total);
+}
+calculate();
+console.log(total); // Error
+
+Output:
+100
+Uncaught ReferenceError: total is not defined
+
+
+
+
+4️⃣ Block Scope (let & const)
+
+let and const are block-scoped — they only exist inside the { } they're declared in.
+
+if (true) {
+  let score = 90;
+  console.log(score);
+}
+console.log(score); // Error
+
+Output:
+90
+Uncaught ReferenceError: score is not defined
+
+
+
+
+5️⃣ var vs let/const
+
+var ignores block scope, which can cause bugs. let and const fix this.
+
+if (true) {
+  var x = 10;
+  let y = 20;
+}
+console.log(x); // 10 — accessible
+console.log(y); // Error — not accessible
+
+Output:
+10
+Uncaught ReferenceError: y is not defined
+
+
+
+
+6️⃣ Lexical Scope
+
+Inner functions have access to variables of their outer (parent) functions — this is called Lexical Scoping.
+
+function outer() {
+  let name = "Frontend Dev";
+
+  function inner() {
+    console.log(name);
+  }
+  inner();
+}
+outer();
+
+Output:
+Frontend Dev
+
+
+
+
+7️⃣ Scope Chain
+
+When a variable isn't found in the current scope, JavaScript looks outward through the scope chain until it reaches the global scope.
+
+let level1 = "Global";
+
+function levelTwo() {
+  let level2 = "Function";
+
+  function levelThree() {
+    console.log(level1);
+    console.log(level2);
+  }
+  levelThree();
+}
+levelTwo();
+
+Output:
+Global
+Function
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let x = 5;
+
+function test() {
+  let x = 10;
+  console.log(x);
+}
+test();
+console.log(x);
+
+Output :
+10
+5

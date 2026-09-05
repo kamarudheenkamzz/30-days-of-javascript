@@ -1,0 +1,183 @@
+1️⃣ Basic switch
+
+
+let day = 2;
+
+switch (day) {
+
+  case 1:
+
+    console.log("Monday");
+
+    break;
+
+  case 2:
+
+    console.log("Tuesday");
+
+    break;
+
+  case 3:
+
+    console.log("Wednesday");
+
+    break;
+
+  default:
+
+    console.log("Invalid day");
+
+}
+
+
+Output:
+
+Tuesday
+
+
+
+
+
+
+
+
+2️⃣ Why break Matters
+
+
+Without break, JavaScript keeps running the cases below the matching one — this is called "fall-through."
+
+
+let day = 2;
+
+switch (day) {
+
+  case 1:
+
+    console.log("Monday");
+
+  case 2:
+
+    console.log("Tuesday");
+
+  case 3:
+
+    console.log("Wednesday");
+
+    break;
+
+  default:
+
+    console.log("Invalid day");
+
+}
+
+
+Output:
+
+Tuesday 
+
+Wednesday
+
+
+
+
+
+
+3️⃣ default — The Fallback Case
+
+
+default runs when none of the cases match. It works like the else in an if-else chain.
+
+
+let day = 9;
+
+switch (day) {
+
+  case 1:
+
+    console.log("Monday");
+
+    break;
+
+  default:
+
+    console.log("Invalid day");
+
+}
+
+
+Output:
+
+Invalid day
+
+
+
+
+
+⚠️ Common JavaScript Gotcha
+
+
+
+switch uses strict comparison (===), so types must match exactly.
+
+
+let value = "2";
+
+switch (value) {
+
+  case 2:
+
+    console.log("Number match");
+
+    break;
+
+  default:
+
+    console.log("No match");
+
+}
+
+
+Output:
+
+No match
+
+
+
+
+
+
+🧩 Small Practice Challenge
+
+
+Predict the output before running this code:
+
+
+let grade = "B";
+
+switch (grade) {
+
+  case "A":
+
+    console.log("Excellent");
+
+  case "B":
+
+    console.log("Good");
+
+  case "C":
+
+    console.log("Needs Improvement");
+
+    break;
+
+  default:
+
+    console.log("Invalid grade");
+
+}
+
+Output:
+
+Good
+

@@ -1,0 +1,42 @@
+1️⃣ Explicit Conversion (We do it manually)
+
+let num = "100";
+console.log(Number(num)); // 100
+console.log(String(100)); // "100"
+console.log(Boolean(0)); // false
+console.log(Boolean("hello")); // true
+
+
+2️⃣ Implicit Coercion (JS does it automatically)
+
+
+console.log("5" + 1); // "51" (number becomes string)
+console.log("5" - 1); // 4 (string becomes number)
+console.log("5" * "2"); // 10 (both become numbers)
+console.log(1 + true); // 2 (true becomes 1)
+
+
+
+⚠️ Common JavaScript Gotcha
+
+
+console.log("5" + 3); // "53"
+console.log("5" - 3); // 2
+
+
++ with a string triggers concatenation, but - * /  
+force numeric conversion. Same values, completely different 
+results — this trips up beginners constantly.
+
+
+
+🧩 Small Practice Challenge
+
+
+Predict the output before running it:
+
+console.log("10" + 5);  // "105" string
+console.log("10" - 5);  // 5 
+console.log("10" == 10); // true 
+console.log("10" === 10); // false
+

@@ -1,0 +1,118 @@
+1️⃣ Function Parameters
+
+Parameters are variables defined inside a function. They act as placeholders for values passed to the function.
+
+function greet(name) {
+console.log("Hello, " + name);
+}
+
+greet("Kamarudheen");
+
+Output:
+Hello, Kamarudheen
+
+
+
+2️⃣ Multiple Parameters
+
+A function can accept multiple parameters.
+
+function add(a, b) {
+return a + b;
+}
+let result = add(10, 20);
+console.log(result);
+
+Output:
+30
+
+Here, a and b are parameters, while 10 and 20 are arguments.
+
+
+
+3️⃣ Parameters vs Arguments
+
+Parameters → Variables defined in the function
+Arguments → Actual values passed to the function
+
+function introduce(name, age) {
+console.log(name + " is " + age + " years old");
+}
+
+introduce("Kamarudheen", 29);
+
+
+
+
+4️⃣ Default Parameters
+
+JavaScript allows default values for parameters.
+
+function greet(name = "Guest") {
+console.log("Hello, " + name);
+}
+greet();
+
+Output:
+Hello, Guest
+
+
+5️⃣ Return Statement
+
+The return statement sends a value back from a function.
+
+function multiply(a, b) {
+return a * b;
+}
+let result = multiply(5, 4);
+console.log(result);
+
+Output:
+20
+
+
+
+6️⃣ Return vs console.log()
+
+console.log() → Displays a value
+return → Sends a value back from the function
+
+function add(a, b) {
+console.log(a + b);
+}
+let result = add(5, 3);
+console.log(result);
+
+Output:
+8
+undefined
+The function prints 8, but doesn't return anything. So result is undefined.
+
+
+
+⚠️ Common JavaScript Gotcha
+
+Without return, a function returns undefined.
+
+function subtract(a, b) {
+a - b;
+}
+console.log(subtract(10, 5));
+
+Output:
+undefined
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+function calculate(a, b) {
+return a + b;
+}
+let result = calculate(10, 5);
+console.log(result * 2);
+
+Output :
+30

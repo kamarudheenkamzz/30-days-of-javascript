@@ -1,0 +1,117 @@
+1️⃣ if — Check a Condition
+
+The if statement runs a block of code only when its condition is true.
+
+
+let age = 20;
+
+if (age >= 18) {
+
+console.log("You are eligible");
+
+}
+
+Output:
+
+You are eligible
+
+
+
+2️⃣ else — When the Condition is False
+
+The else block runs when the if condition is false.
+
+
+let age = 16;
+
+if (age >= 18) {
+
+  console.log("You are eligible");
+
+} else {
+
+  console.log("You are not eligible");
+
+}
+
+Output:
+
+You are not eligible
+
+
+
+
+3️⃣ else if — Check Multiple Conditions
+
+When there are multiple conditions to check, we can use else if.
+
+
+let marks = 75;
+
+if (marks >= 90) {
+
+  console.log("Excellent");
+
+} else if (marks >= 60) {
+
+  console.log("Good");
+
+} else {
+
+  console.log("Needs Improvement");
+
+}
+
+Output:
+
+Good
+
+
+
+⚠️ Common JavaScript Gotcha
+
+The order of conditions matters.
+JavaScript checks conditions from top to bottom and stops when it finds the first true condition.
+
+let score = 95;
+
+if (score >= 60) {
+
+  console.log("Passed");
+
+} else if (score >= 90) {
+
+  console.log("Excellent");
+
+}
+
+Output:
+
+Passed
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output before running this code:
+
+
+let temperature = 32;
+
+if (temperature >= 35) {
+
+  console.log("Very Hot");
+
+} else if (temperature >= 25) {
+
+  console.log("Warm");
+
+} else {
+
+  console.log("Cool");
+
+}
+
+Output:
+
+Warm
