@@ -9,58 +9,58 @@ This repo tracks my daily JavaScript learning journey. Each folder covers one co
 ## ✅ Progress
 
 ### Week 1 — Fundamentals
-| Day | Topic | Status |
-|-----|-------|--------|
-| 1 | var, let, const | ✅ |
-| 2 | Data Types | ✅ |
-| 3 | Operators | ✅ |
-| 4 | Type Conversion & Coercion | ✅ |
-| 5 | if, else, else if | ✅ |
-| 6 | switch | ✅ |
-| 7 | for, while, do...while | ✅ |
+| Day | Topic |
+|-----|-------|
+| 1 | var, let, const |
+| 2 | Data Types |
+| 3 | Operators |
+| 4 | Type Conversion & Coercion |
+| 5 | if, else, else if |
+| 6 | switch |
+| 7 | for, while, do...while |
 
 ### Week 2 — Functions & Scope
-| Day | Topic | Status |
-|-----|-------|--------|
-| 8 | Functions | ✅ |
-| 9 | Function Parameters & Return | ✅ |
-| 10 | Arrow Functions | ✅ |
-| 11 | Scope | ✅ |
-| 12 | Hoisting | 🔜 |
-| 13 | Closures | ⬜ |
-| 14 | Recursion | ⬜ |
+| Day | Topic |
+|-----|-------|
+| 8 | Functions |
+| 9 | Function Parameters & Return |
+| 10 | Arrow Functions |
+| 11 | Scope |
+| 12 | Hoisting |
+| 13 | Closures |
+| 14 | Recursion |
 
 ### Week 3 — Arrays, Objects & Modern JS
-| Day | Topic | Status |
-|-----|-------|--------|
-| 15 | Arrays | ⬜ |
-| 16 | Array Methods — map(), filter(), reduce() | ⬜ |
-| 17 | More Array Methods — find(), some(), every() | ⬜ |
-| 18 | Strings & String Methods | ⬜ |
-| 19 | Objects | ⬜ |
-| 20 | Object Methods & Destructuring | ⬜ |
-| 21 | Spread & Rest Operators | ⬜ |
+| Day | Topic |
+|-----|-------|
+| 15 | Arrays |
+| 16 | Array Methods — map(), filter(), reduce() |
+| 17 | More Array Methods — find(), some(), every() |
+| 18 | Strings & String Methods |
+| 19 | Objects |
+| 20 | Object Methods & Destructuring |
+| 21 | Spread & Rest Operators |
 
 ### Week 4 — DOM, Events & Async
-| Day | Topic | Status |
-|-----|-------|--------|
-| 22 | Template Literals | ⬜ |
-| 23 | DOM Basics | ⬜ |
-| 24 | DOM Manipulation | ⬜ |
-| 25 | Events & Event Listeners | ⬜ |
-| 26 | Forms & Form Validation | ⬜ |
-| 27 | JSON & Local Storage | ⬜ |
-| 28 | Promises | ⬜ |
-| 29 | async/await & Fetch API | ⬜ |
-| 30 | Mini JavaScript Project + What I Learned | ⬜ |
+| Day | Topic |
+|-----|-------|
+| 22 | Template Literals |
+| 23 | DOM Basics |
+| 24 | DOM Manipulation |
+| 25 | Events & Event Listeners |
+| 26 | Forms & Form Validation |
+| 27 | JSON & Local Storage |
+| 28 | Promises |
+| 29 | async/await & Fetch API |
+| 30 | Mini JavaScript Project + What I Learned |
 
 ## 📂 Structure
 
 Each day has its own folder:
 
     day-XX-topic-name/
-    ├── images...    → code examples
-    └── index.html    → code examples
+    ├── index.html    → concept explanation
+    └── images...    → code examples
 
 ## 🚀 Why I'm doing this
 
