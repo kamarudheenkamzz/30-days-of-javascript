@@ -1,0 +1,142 @@
+1️⃣ What is Recursion?
+
+Recursion is a programming technique where a function calls itself until a specific condition is met.
+
+In simple words:
+
+👉 A function keeps calling itself until it reaches a stopping condition.
+
+function countDown(num) {
+if (num === 0) {
+console.log("Done!");
+return;
+}
+console.log(num);
+countDown(num - 1);
+}
+
+countDown(3);
+
+Output:
+3
+2
+1
+Done!
+
+
+
+2️⃣ How Recursion Works
+
+A recursive function usually has two important parts:
+
+✅ Base Case → The condition that stops the function
+✅ Recursive Case → The part where the function calls itself again
+
+function countDown(num) {
+if (num === 0) {
+return;
+}
+
+console.log(num);
+countDown(num - 1);
+}
+
+Here, the function keeps calling itself with a smaller value.
+
+👉 The base case prevents the function from running forever.
+
+
+
+3️⃣ Recursion with Numbers
+
+Recursion can be used to solve mathematical problems.
+
+For example, calculating the factorial of a number:
+
+function factorial(num) {
+if (num === 1) {
+return 1;
+}
+
+return num * factorial(num - 1);
+}
+
+console.log(factorial(5));
+
+Output:
+120
+
+The function works like:
+
+5 × 4 × 3 × 2 × 1 = 120
+
+👉 Each function call solves a smaller version of the same problem.
+
+
+
+
+4️⃣ Why Do We Need a Base Case?
+
+Every recursive function should have a clear stopping condition.
+
+Without a base case:
+
+function test() {
+test();
+}
+
+test();
+
+The function will continue calling itself indefinitely and eventually cause a stack overflow.
+
+👉 The base case is what tells recursion when to stop.
+
+
+
+
+5️⃣ Practical Example — Sum of Numbers
+
+We can use recursion to calculate the sum of numbers.
+
+function sum(num) {
+if (num === 1) {
+return 1;
+}
+
+return num + sum(num - 1);
+}
+
+console.log(sum(5));
+
+Output:
+15
+
+The calculation is:
+
+5 + 4 + 3 + 2 + 1 = 15
+
+👉 Recursion breaks the problem into smaller steps.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+function count(num) {
+if (num === 0) {
+return;
+}
+
+console.log(num);
+count(num - 1);
+}
+
+count(4);
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+
+

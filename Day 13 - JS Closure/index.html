@@ -1,0 +1,124 @@
+1️⃣ What is a Closure?
+
+A closure is created when a function remembers and can access variables from its outer scope, even after the outer function has finished executing.
+
+In simple words:
+👉 A function can “remember” the variables that were available when it was created.
+
+function outer() {
+let name = "Kamarudheen";
+    function inner() {
+        console.log(name);
+        }
+    return inner;
+}
+const result = outer();
+result();
+
+Output:
+Kamarudheen
+
+
+
+2️⃣ How Closures Work
+
+A closure is commonly created when we have a function inside another function.
+
+function outer() {
+    let message = "Hello JavaScript";
+    function inner() {
+        console.log(message);
+    }
+    return inner;
+}
+
+The inner function can still access the message variable from the outer function.
+
+👉 This happens because the inner function remembers its surrounding scope.
+
+
+
+
+3️⃣ Closures with Parameters
+
+Closures can also remember values passed as function parameters.
+
+function greet(name) {
+    return function() {
+    console.log("Hello " + name);
+    };
+}
+
+const greetUser = greet("Kamarudheen");
+greetUser();
+
+Output:
+Hello Kamarudheen
+
+Even though greet() has finished executing, the returned function still remembers the name value.
+
+
+
+
+4️⃣ Practical Example — Counter
+
+Closures are very useful when we need to maintain a value between function calls.
+
+function counter() {
+    let count = 0;
+    return function() {
+        count++;
+        console.log(count);
+    };
+}
+
+const increment = counter();
+increment();
+increment();
+increment();
+
+Output:
+1
+2
+3
+
+Here, the inner function remembers the count variable and can update it every time it is called.
+
+
+5️⃣ Closures and Private Variables
+
+Closures can also help us create variables that cannot be directly accessed from outside the function.
+
+function counter() {
+    let count = 0;
+    return function() {
+        count++;
+        return count;
+    };
+}
+const increment = counter();
+console.log(increment());
+console.log(increment());
+
+The count variable is not directly accessible from outside.
+
+👉 The closure controls how that variable is accessed and updated.
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+function outer() {
+    let count = 10;
+    return function() {
+        count++;
+        console.log(count);
+    };
+}
+const result = outer();
+result();
+result();
+
+🤔 What will be the output?

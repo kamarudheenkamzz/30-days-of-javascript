@@ -1,0 +1,97 @@
+1️⃣ What is Hoisting?
+
+Hoisting is JavaScript's behavior of processing declarations before executing the code.
+
+Some variables and functions can therefore be referenced before they are declared, depending on how they are defined.
+
+console.log(name);
+var name = "Kamarudheen";
+
+Output:
+undefined
+
+
+
+2️⃣ Hoisting with var
+
+var declarations are hoisted and initialized with undefined.
+
+console.log(x);
+var x = 10;
+
+Output:
+undefined
+
+
+
+
+3️⃣ Hoisting with let & const
+
+let and const are hoisted, but they are not initialized before their declaration.
+
+console.log(age);
+let age = 25;
+
+Output:
+ReferenceError
+
+This period is called the Temporal Dead Zone (TDZ).
+The same applies to const.
+
+
+
+4️⃣ Function Declaration Hoisting
+
+Function declarations are fully hoisted.
+
+greet();
+function greet() {
+console.log("Hello JavaScript!");
+}
+
+Output:
+Hello JavaScript!
+
+
+
+
+5️⃣ Function Expression
+
+Function expressions behave differently.
+
+sayHello();
+var sayHello = function() {
+console.log("Hello!");
+};
+
+Output:
+TypeError
+
+The variable is hoisted as undefined, but the function is assigned only when execution reaches that line.
+
+
+
+
+6️⃣ var vs let vs const
+
+var → Hoisted + initialized as undefined
+let → Hoisted + TDZ
+const → Hoisted + TDZ
+
+Understanding this difference helps avoid unexpected errors.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+console.log(a);
+var a = 10;
+console.log(b);
+let b = 20;
+
+🤔 What will be the output?
+
+Comment your answer below 👇
