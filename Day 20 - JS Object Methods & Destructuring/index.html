@@ -1,0 +1,123 @@
+
+
+1️⃣ Object Methods
+
+Object methods are functions stored inside an object.
+
+const user = {
+  name: "Kamarudheen",
+
+  greet() {
+    return `Hello, I'm ${this.name}`;
+  }
+};
+
+console.log(user.greet());
+
+📌 Output:
+
+Hello, I'm Kamarudheen
+
+👉 The this keyword refers to the current object.
+
+
+
+
+2️⃣ What is Destructuring?
+
+Destructuring allows us to extract object values into variables easily.
+
+const user = {
+  name: "Kamarudheen",
+  age: 27,
+  role: "Frontend Developer"
+};
+
+const { name, age, role } = user;
+
+console.log(name);
+console.log(age);
+console.log(role);
+
+📌 Output:
+
+Kamarudheen
+27
+Frontend Developer
+
+👉 This makes code shorter and easier to read.
+
+
+
+
+
+3️⃣ Renaming Variables
+
+We can give a different variable name while destructuring.
+
+const { name: userName, age: userAge } = user;
+
+console.log(userName);
+console.log(userAge);
+
+
+
+
+
+4️⃣ Default Values
+
+We can provide a default value if a property doesn't exist.
+
+const user = {
+  name: "Kamarudheen"
+};
+
+const { name, role = "Frontend Developer" } = user;
+
+console.log(name);
+console.log(role);
+
+📌 Output:
+
+Kamarudheen
+Frontend Developer
+
+
+
+
+
+5️⃣ Destructuring in Functions
+
+Destructuring can also be used directly in function parameters.
+
+function showUser({ name, role }) {
+  console.log(`${name} is a ${role}`);
+}
+
+showUser({
+  name: "Kamarudheen",
+  role: "Frontend Developer"
+});
+
+📌 Output:
+
+Kamarudheen is a Frontend Developer
+
+
+
+
+🧩 Practice Challenge
+
+What will be the output?
+
+const developer = {
+  name: "Kamarudheen",
+  role: "Frontend Developer"
+};
+
+const { name, role } = developer;
+
+console.log(`${name} is a ${role}`);
+
+🤔 Can you predict the output before running the code?
+

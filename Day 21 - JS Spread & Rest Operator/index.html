@@ -1,0 +1,147 @@
+
+
+1️⃣ What is the Spread Operator?
+
+The Spread Operator expands the elements of an array or properties of an object.
+
+let fruits = ["Apple", "Banana"];
+let newFruits = [...fruits, "Mango"];
+
+console.log(newFruits);
+
+Output:
+["Apple", "Banana", "Mango"]
+
+👉 Spread is useful for copying and combining arrays.
+
+
+
+
+2️⃣ Spread with Objects
+
+The Spread Operator can also copy and combine object properties.
+
+let user = {
+name: "Kamarudheen",
+role: "Frontend Developer"
+};
+
+let updatedUser = {
+...user,
+experience: "5+ Years"
+};
+
+console.log(updatedUser);
+
+Output:
+{
+name: "Kamarudheen",
+role: "Frontend Developer",
+experience: "5+ Years"
+}
+
+👉 This is commonly used when creating a new object with additional properties.
+
+
+
+
+
+3️⃣ Copying an Array
+
+Spread can create a copy of an existing array.
+
+let numbers = [10, 20, 30];
+let copiedNumbers = [...numbers];
+
+console.log(copiedNumbers);
+
+Output:
+[10, 20, 30]
+
+👉 It helps create a new array instead of directly modifying the original array.
+
+
+
+
+
+4️⃣ What is the Rest Operator?
+
+The Rest Operator collects multiple values into a single array.
+
+function addNumbers(...numbers) {
+return numbers;
+}
+
+console.log(addNumbers(10, 20, 30));
+
+Output:
+[10, 20, 30]
+
+👉 Rest is useful when we don't know how many arguments a function will receive.
+
+
+
+
+
+
+5️⃣ Rest with Function Parameters
+
+We can use Rest to work with multiple function arguments.
+
+function calculateTotal(...prices) {
+return prices.reduce((total, price) => total + price, 0);
+}
+
+console.log(calculateTotal(100, 200, 300));
+
+Output:
+600
+
+👉 Rest collects all arguments into an array, which can then be processed.
+
+
+
+
+
+6️⃣ Spread vs Rest
+
+Both use the same `...` syntax, but their purposes are different.
+
+Spread:
+👉 Expands or spreads values.
+
+Rest:
+👉 Collects multiple values into one array.
+
+Example:
+
+let numbers = [10, 20, 30];
+
+console.log(...numbers);
+
+function test(...values) {
+console.log(values);
+}
+
+test(10, 20, 30);
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let numbers = [10, 20, 30];
+
+function calculate(...values) {
+return values.length;
+}
+
+console.log(calculate(...numbers));
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+
+

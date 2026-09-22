@@ -1,0 +1,102 @@
+
+
+1️⃣ find()
+
+The find() method returns the first element that matches a condition.
+
+let numbers = [10, 20, 30, 40];
+
+let result = numbers.find(function(num) {
+return num > 20;
+});
+
+console.log(result);
+
+Output:
+30
+
+👉 find() returns only the first matching element.
+
+
+
+
+2️⃣ some()
+
+The some() method checks if at least one element in an array matches a condition.
+
+let numbers = [10, 20, 30, 40];
+
+let result = numbers.some(function(num) {
+return num > 35;
+});
+
+console.log(result);
+
+Output:
+true
+
+👉 some() returns true if at least one element matches.
+
+
+
+
+3️⃣ every()
+
+The every() method checks if all elements in an array match a condition.
+
+let numbers = [10, 20, 30, 40];
+
+let result = numbers.every(function(num) {
+return num > 5;
+});
+
+console.log(result);
+
+Output:
+true
+
+👉 every() returns true only when all elements match the condition.
+
+
+
+
+4️⃣  Practical Example
+
+Let's say we have a list of product prices:
+
+let prices = [100, 250, 400, 150];
+
+let product = prices.find(price => price > 300);
+
+let hasExpensive = prices.some(price => price > 300);
+
+let allAffordable = prices.every(price => price < 500);
+
+console.log(product);
+console.log(hasExpensive);
+console.log(allAffordable);
+
+Output:
+400
+true
+true
+
+👉 These methods make it easier to search and validate array data.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let numbers = [5, 10, 15, 20];
+
+console.log(numbers.find(num => num > 12));
+console.log(numbers.some(num => num > 18));
+console.log(numbers.every(num => num > 0));
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+

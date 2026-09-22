@@ -1,0 +1,104 @@
+
+
+1️⃣ map()
+
+The map() method creates a new array by applying a function to every element.
+
+let numbers = [1, 2, 3, 4];
+
+let doubled = numbers.map(function(num) {
+return num * 2;
+});
+
+console.log(doubled);
+
+Output:
+[2, 4, 6, 8]
+
+👉 map() is useful when we want to transform every element.
+
+
+
+
+2️⃣ filter()
+
+The filter() method creates a new array containing only elements that match a condition.
+
+let numbers = [10, 15, 20, 25];
+
+let result = numbers.filter(function(num) {
+return num > 15;
+});
+
+console.log(result);
+
+Output:
+[20, 25]
+
+👉 filter() is useful when we want to select specific elements.
+
+
+
+
+3️⃣ reduce()
+
+The reduce() method reduces all array elements into a single value.
+
+let numbers = [10, 20, 30, 40];
+
+let total = numbers.reduce(function(sum, num) {
+return sum + num;
+}, 0);
+
+console.log(total);
+
+Output:
+100
+
+👉 reduce() is useful for calculating totals and combining values.
+
+
+
+
+5️⃣ Practical Example
+
+Let's say we have product prices:
+
+let prices = [100, 200, 300];
+
+let discounted = prices.map(price => price * 0.9);
+
+let expensive = prices.filter(price => price > 150);
+
+let total = prices.reduce((sum, price) => sum + price, 0);
+
+console.log(discounted);
+console.log(expensive);
+console.log(total);
+
+Output:
+[90, 180, 270]
+[200, 300]
+600
+
+👉 These methods make working with array data much easier.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let numbers = [5, 10, 15, 20];
+
+let result = numbers
+.filter(num => num > 10)
+.map(num => num * 2);
+
+console.log(result);
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+

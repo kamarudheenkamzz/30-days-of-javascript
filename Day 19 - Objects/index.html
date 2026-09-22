@@ -1,0 +1,165 @@
+
+
+1️⃣ What is an Object?
+
+An object stores data in key-value pairs.
+
+let person = {
+name: "Kamarudheen",
+age: 28,
+role: "Frontend Developer"
+};
+
+console.log(person);
+
+Output:
+{
+name: "Kamarudheen",
+age: 28,
+role: "Frontend Developer"
+}
+
+👉 Objects are useful for representing real-world entities and their properties.
+
+
+
+
+2️⃣ Accessing Object Properties
+
+We can access object properties using dot notation or bracket notation.
+
+let person = {
+name: "Kamarudheen",
+age: 28
+};
+
+console.log(person.name);
+console.log(person["age"]);
+
+Output:
+Kamarudheen
+28
+
+👉 Both methods can be used to access object values.
+
+
+
+
+
+3️⃣ Adding & Updating Properties
+
+We can add new properties or update existing ones.
+
+let person = {
+name: "Kamarudheen",
+age: 28
+};
+
+person.city = "Kerala";
+person.age = 29;
+
+console.log(person);
+
+👉 Objects are mutable, so their properties can be changed.
+
+
+
+
+
+4️⃣ Removing Properties
+
+We can use the delete operator to remove a property.
+
+let person = {
+name: "Kamarudheen",
+age: 28,
+city: "Kerala"
+};
+
+delete person.city;
+
+console.log(person);
+
+Output:
+{
+name: "Kamarudheen",
+age: 28
+}
+
+👉 delete removes a property from an object.
+
+
+
+
+5️⃣ Objects Can Store Different Data Types
+
+Objects can store strings, numbers, arrays, booleans and even functions.
+
+let user = {
+name: "Kamarudheen",
+age: 28,
+skills: ["HTML", "CSS", "JavaScript"],
+isDeveloper: true
+};
+
+console.log(user.skills);
+console.log(user.isDeveloper);
+
+Output:
+["HTML", "CSS", "JavaScript"]
+true
+
+👉 This makes objects very useful for storing structured data.
+
+
+
+
+
+6️⃣ Nested Objects
+
+An object can contain another object.
+
+let user = {
+name: "Kamarudheen",
+address: {
+city: "Kanhangad",
+state: "Kerala"
+}
+};
+
+console.log(user.address.city);
+
+Output:
+Kanhangad
+
+👉 Nested objects are commonly used when working with complex data.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let product = {
+name: "Laptop",
+price: 50000,
+brand: "Apple"
+};
+
+product.price = 55000;
+product.category = "Electronics";
+
+console.log(product.name);
+console.log(product.price);
+console.log(product.category);
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+
+
+
+
+
+
