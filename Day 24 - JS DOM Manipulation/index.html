@@ -1,0 +1,127 @@
+
+
+2️⃣ Changing Text Content
+
+We can use `textContent` to update the text of an HTML element.
+
+HTML:
+
+<h1 id="title">Hello World</h1>
+
+JavaScript:
+let title = document.getElementById("title");
+title.textContent = "Welcome Kamarudheen!";
+
+Output:
+Welcome Kamarudheen!
+
+👉 This changes the text dynamically.
+
+
+
+
+
+
+3️⃣ Changing HTML Content
+
+We can use `innerHTML` to change the HTML inside an element.
+
+HTML:
+
+<div id="box">Hello</div>
+
+JavaScript:
+document.getElementById("box").innerHTML = "<b>Welcome!</b>";
+
+Output:
+Welcome! (Bold)
+
+👉 `innerHTML` can insert HTML elements and content.
+
+
+
+
+
+4️⃣ Adding New Elements
+
+We can create and add new HTML elements using JavaScript.
+
+HTML:
+
+<ul id="list"></ul>
+
+JavaScript:
+let list = document.getElementById("list");
+let item = document.createElement("li");
+
+item.textContent = "JavaScript";
+list.appendChild(item);
+
+Output:
+• JavaScript
+
+👉 `createElement()` creates an element, while `appendChild()` adds it to the page.
+
+
+
+
+
+5️⃣ Removing Elements
+
+We can also remove HTML elements using JavaScript.
+
+HTML:
+
+<p id="message">Hello World</p>
+
+JavaScript:
+let message = document.getElementById("message");
+message.remove();
+
+Output:
+The paragraph is removed.
+
+👉 `remove()` removes an element from the DOM.
+
+
+
+
+
+6️⃣ Changing CSS Classes
+
+We can use `classList` to add or remove CSS classes.
+
+JavaScript:
+let box = document.querySelector(".box");
+
+box.classList.add("active");
+box.classList.remove("hidden");
+box.classList.toggle("dark");
+
+👉 This is useful for dynamically changing styles.
+
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+HTML:
+
+<p id="text">Hello World</p>
+<button id="btn">Change Text</button>
+
+JavaScript:
+let text = document.querySelector("#text");
+let btn = document.querySelector("#btn");
+
+btn.onclick = () => {
+text.textContent = "DOM Manipulation!";
+};
+
+🤔 What will happen when you click the button?
+
+Comment your answer below 👇
+

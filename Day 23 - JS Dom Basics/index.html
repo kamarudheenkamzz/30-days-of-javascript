@@ -1,0 +1,129 @@
+
+
+2️⃣ Selecting an Element
+
+HTML:
+
+<h1 id="title">Hello World</h1>
+
+JavaScript:
+
+let title = document.getElementById("title");
+console.log(title);
+
+Output:
+
+<h1 id="title">Hello World</h1>
+
+👉 `getElementById()` selects an element using its ID.
+
+
+
+
+3️⃣ Changing HTML Content
+
+HTML:
+
+<h1 id="title">Hello World</h1>
+
+JavaScript:
+
+let title = document.getElementById("title");
+title.textContent = "Hello Kamarudheen!";
+
+Output:
+
+Hello Kamarudheen!
+
+👉 `textContent` changes the text inside an HTML element.
+
+
+
+
+
+4️⃣ Using querySelector()
+
+HTML:
+
+<p class="message">Welcome!</p>
+
+JavaScript:
+
+let message = document.querySelector(".message");
+message.textContent = "Welcome to JavaScript!";
+
+Output:
+
+Welcome to JavaScript!
+
+👉 `querySelector()` selects the first element matching a CSS selector.
+
+We can use:
+
+`#id` → ID selector
+`.class` → Class selector
+`p` → Element selector
+
+
+
+
+
+5️⃣ Changing Styles
+
+JavaScript can also change element styles.
+
+let message = document.querySelector(".message");
+
+message.style.color = "blue";
+message.style.fontSize = "20px";
+
+👉 This dynamically changes the selected element's styles.
+
+
+
+
+
+6️⃣ Practical Example
+
+HTML:
+
+<button id="btn">Click Me</button>
+
+<p id="output">Waiting...</p>
+
+JavaScript:
+
+let btn = document.getElementById("btn");
+let output = document.getElementById("output");
+
+btn.onclick = function() {
+output.textContent = "Button Clicked!";
+};
+
+👉 When the user clicks the button, JavaScript changes the webpage text.
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+HTML:
+
+<p id="text">Learning JavaScript</p>
+<button id="btn">Change Text</button>
+
+JavaScript:
+
+let btn = document.querySelector("#btn");
+let text = document.querySelector("#text");
+
+btn.onclick = () => {
+text.textContent = "JavaScript is powerful!";
+};
+
+🤔 What will be displayed after clicking the button?
+
+Comment your answer below 👇
+

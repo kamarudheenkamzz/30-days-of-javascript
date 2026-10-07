@@ -1,0 +1,123 @@
+
+
+2️⃣ What is an Event Listener?
+
+An event listener waits for a specific event and executes a function when that event occurs.
+
+JavaScript:
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+console.log("Button clicked!");
+});
+
+Output:
+Button clicked!
+
+👉 The function runs whenever the button is clicked.
+
+
+
+
+
+3️⃣ Click Event
+
+The "click" event is one of the most commonly used events.
+
+HTML:
+
+<button id="btn">Click Me</button>
+
+JavaScript:
+
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+alert("Button clicked!");
+});
+
+👉 Clicking the button will display an alert message.
+
+
+
+
+
+4️⃣ Mouse Events
+
+JavaScript can also respond to mouse interactions.
+
+HTML:
+
+<div id="box">Hover Me</div>
+
+JavaScript:
+
+let box = document.getElementById("box");
+
+box.addEventListener("mouseover", () => {
+console.log("Mouse is over the box");
+});
+
+👉 The "mouseover" event runs when the mouse moves over an element.
+
+
+
+
+
+5️⃣ Keyboard Events
+
+We can detect keyboard actions using events like "keydown".
+
+JavaScript:
+
+document.addEventListener("keydown", (event) => {
+console.log(event.key);
+});
+
+Output:
+A
+
+👉 Pressing a key will display the key that was pressed.
+
+
+
+
+
+6️⃣ Event Object
+
+The event object contains useful information about the event.
+
+JavaScript:
+
+button.addEventListener("click", (event) => {
+console.log(event.target);
+});
+
+👉 "event.target" tells us which element triggered the event.
+
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+HTML:
+
+<button id="btn">Click Me</button>
+
+JavaScript:
+
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+console.log("Hello JavaScript!");
+});
+
+🤔 What will happen when you click the button?
+
+Comment your answer below 👇
+
+

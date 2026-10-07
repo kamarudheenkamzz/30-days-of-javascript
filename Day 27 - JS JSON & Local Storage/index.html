@@ -1,0 +1,98 @@
+
+
+1️⃣ What is JSON?
+
+JSON stands for JavaScript Object Notation. It is commonly used to store and exchange data.
+
+{
+  "name": "Kamarudheen",
+  "role": "Frontend Developer"
+}
+
+👉 JSON is widely used with APIs.
+
+
+
+
+2️⃣ JSON.stringify()
+
+It converts a JavaScript object into a JSON string.
+
+let user = { name: "Kamarudheen" };
+let data = JSON.stringify(user);
+
+console.log(data);
+
+Output:
+{"name":"Kamarudheen"}
+
+
+
+
+3️⃣ JSON.parse()
+
+It converts a JSON string back into a JavaScript object.
+
+let data = '{"name":"Kamarudheen"}';
+let user = JSON.parse(data);
+
+console.log(user.name);
+
+Output:
+Kamarudheen
+
+
+
+
+4️⃣ Local Storage
+
+Local Storage stores data in the browser.
+
+localStorage.setItem("username", "Kamarudheen");
+
+let name = localStorage.getItem("username");
+
+console.log(name);
+
+Output:
+Kamarudheen
+
+👉 Data remains available even after refreshing the page.
+
+
+
+
+5️⃣ Storing Objects
+
+Since Local Storage stores strings, we use JSON.
+
+localStorage.setItem("user", JSON.stringify(user));
+
+let data = JSON.parse(localStorage.getItem("user"));
+
+
+
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+let user = {
+  name: "Kamarudheen",
+  role: "Frontend Developer"
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+
+let data = JSON.parse(localStorage.getItem("user"));
+
+console.log(data.role);
+
+🤔 What will be the output?
+
+Comment your answer below 👇
+
+

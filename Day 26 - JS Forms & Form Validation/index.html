@@ -1,0 +1,117 @@
+
+
+1️⃣ What is a Form?
+
+An HTML form is used to collect information from users.
+
+HTML:
+
+<form>
+  <input type="text" id="name">
+  <button type="submit">Submit</button>
+</form>
+
+👉 Forms are commonly used for login, registration, search, contact, and other user input.
+
+
+
+
+
+2️⃣ Getting Form Values
+
+We can use the "value" property to get the data entered by the user.
+
+JavaScript:
+
+let name = document.getElementById("name");
+
+console.log(name.value);
+
+👉 "value" returns the current value entered in the input field.
+
+
+
+
+
+3️⃣ Handling Form Submission
+
+We can use the "submit" event to handle form submission.
+
+JavaScript:
+
+form.addEventListener("submit", (event) => {
+event.preventDefault();
+console.log("Form submitted!");
+});
+
+👉 "preventDefault()" prevents the page from refreshing when the form is submitted.
+
+
+
+
+
+
+5️⃣ Checking Empty Fields
+
+We can check whether an input field is empty.
+
+JavaScript:
+
+if (name.value.trim() === "") {
+console.log("Name is required");
+}
+
+Output:
+Name is required
+
+👉 "trim()" removes unnecessary spaces from the beginning and end of the text.
+
+
+
+
+
+6️⃣ Validating Email
+
+We can use a simple condition or regular expression to check an email format.
+
+JavaScript:
+
+let email = document.getElementById("email");
+
+if (!email.value.includes("@")) {
+console.log("Enter a valid email");
+}
+
+👉 This checks whether the email contains an "@" symbol.
+
+
+
+
+
+🧩 Small Practice Challenge
+
+Predict the output:
+
+HTML:
+
+<input type="text" id="name">
+<button id="btn">Submit</button>
+
+JavaScript:
+
+let name = document.querySelector("#name");
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+if (name.value.trim() === "") {
+console.log("Name is required");
+} else {
+console.log("Form submitted!");
+}
+});
+
+🤔 What will happen when you click the button without entering a name?
+
+Comment your answer below 👇
+
+
